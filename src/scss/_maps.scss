@@ -1,0 +1,14 @@
+// COLOR MAP
+$colors: (
+  loaderSmall: #00081F,
+  whiteOpacity: rgba(249,249,249, 0.95),
+  black: rgb(0,0,0),
+  blackOpacity: rgba(0,0,0,0.3),
+  darkGrey: darkgrey,
+  pink: pink,
+  darkGreen: #121f1f
+);
+
+@function colors($key: 'white') {
+  @return map-get($colors, $key);
+}
